@@ -1,4 +1,4 @@
-
+require './braille_hash.rb'
 
 class Braille
   def translate(incoming_text)
@@ -6,4 +6,4 @@ class Braille
       BrailleHash::DICTIONARY[char]
     end
   end
-end 
+end

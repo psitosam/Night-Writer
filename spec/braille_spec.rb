@@ -2,6 +2,7 @@ require 'rspec'
 require 'simplecov'
 SimpleCov.start
 require './lib/braille'
+require './lib/braille_hash'
 
 RSpec.describe Braille do
   describe "#translate" do
