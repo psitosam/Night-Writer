@@ -1,6 +1,7 @@
 require 'rspec'
 require 'simplecov'
 SimpleCov.start
+require './lib/braille'
 
 RSpec.describe Braille do
   describe "#translate" do
@@ -22,4 +23,4 @@ RSpec.describe Braille do
       expect(outgoing_text).to eq(outgoing_array)
     end
   end
-end 
+end
