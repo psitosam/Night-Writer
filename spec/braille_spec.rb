@@ -21,4 +21,5 @@ RSpec.describe Braille do
       ]
       expect(outgoing_text).to eq(outgoing_array)
     end
-  end 
+  end
+end 
