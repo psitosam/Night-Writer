@@ -24,4 +24,28 @@ RSpec.describe Braille do
       expect(outgoing_text).to eq(outgoing_array)
     end
   end
+
+  describe "#render" do
+    it "takes a braille array and turns it into an array of strings" do
+      input = [
+        [
+          ["0", "."],
+          [".", "."],
+          [".", "."],
+        ],
+        [
+          ["0", "."],
+          [".", "."],
+          [".", "."],
+        ]
+      ]
+      output = [
+        "0.0.",
+        "....",
+        "....",
+      ]
+      # require 'pry'; binding.pry
+      expect(subject.render(input)).to eq(output)
+    end
+  end
 end
